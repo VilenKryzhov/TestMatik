@@ -1,0 +1,14 @@
+19:02:39.629 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+19:02:39.710 | INFO | FileHelper:56                            | Creating folder: C:\javaID\javaModule\TestMatik\build\downloads\1693584159686_17076_1
+19:02:40.471 | INFO | WebDriverManager:966                     | Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+19:02:40.542 | INFO | WebDriverManager:1021                    | Exporting webdriver.chrome.driver as C:\Users\DASHA\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+19:02:44.891 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+19:02:44.892 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+19:02:45.263 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=114.0.5735.199 Platform=WINDOWS
+19:02:45.264 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+19:02:45.264 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+19:02:45.264 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (b3d4350a2511b18edb7c272a1ea18142)
+19:02:45.268 | INFO | WebDriverThreadLocalContainer:163        | Browser and proxy will stay open due to holdBrowserOpen=true: 1 -> ChromeDriver: chrome on WINDOWS (b3d4350a2511b18edb7c272a1ea18142), null
+19:03:09.716 | INFO | CloseDriverCommand:24                    | Hold browser and proxy open: 1 -> ChromeDriver: chrome on WINDOWS (b3d4350a2511b18edb7c272a1ea18142), null
+19:03:09.726 | INFO | FileHelper:81                            | Deleted empty folder: C:\javaID\javaModule\TestMatik\build\downloads\1693584159686_17076_1
+19:03:09.728 | INFO | CloseDriverCommand:24                    | Hold browser and proxy open: 24 -> ChromeDriver: chrome on WINDOWS (b3d4350a2511b18edb7c272a1ea18142), null
