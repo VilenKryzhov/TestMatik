@@ -18,10 +18,11 @@ import static com.codeborne.selenide.Selenide.$$;
 public class CheckBookTest extends BaseTest {
 
     SelenideElement filterButton = $(By.xpath("(//div[@class='nav-left'])[2]"));
-    SelenideElement bookItem = $(By.xpath("//*[@id=\"searchDropdownBox\"]/option[6]"));
+    SelenideElement bookItem = $(By.xpath("//option[text()='Books']"));
     SelenideElement searchInput = $(By.xpath("//input[@id=\"twotabsearchtextbox\"]"));
-    ElementsCollection bookElements = $$(".s-result-item");
-
+    ElementsCollection bookElements = $$(By.xpath("//div[@class='a-section']/div[@class='sg-row']"));
+    ElementsCollection titleList = $$(By.xpath("//div/div/h2//span"));
+    ElementsCollection authorList = $$(By.xpath("//div[@class='a-row']"));
     List<Books> booksList = new ArrayList<>();
 
     @Test
@@ -33,19 +34,38 @@ public class CheckBookTest extends BaseTest {
         bookItem.shouldBe(Condition.visible).click();
 
         searchInput.shouldBe(Condition.visible).append("Java").sendKeys(Keys.ENTER);
+        Selenide.sleep(1000);
 
-        for (SelenideElement item : bookElements) {
-            item.shouldBe(Condition.visible);
-            String title = item.$(By.xpath("//div/div/h2//span")).getText();
-            String author = item.$("div.a-row.a-size-base.a-color-secondary span:contains('by ')").getText().replace("by ", "");
-            String price = item.$("span.a-price").getText();
+        List<String> TitleList = titleList.texts();
+        List<String> AuthorList = authorList.texts();
+        List<String> filterAuthorList = new ArrayList<>();
+        List<String> priceList = $$(By.xpath("//span[@class='a-price-whole']")).texts();
 
-            booksList.add(new Books(title, author, price));
+        for (String s : AuthorList) {
+            if (s.contains("by")) {
+                int elementBy = s.indexOf("By");
+                int elementBy2 = s.indexOf("|");
+                String substring = s.substring(elementBy + 1, elementBy2 + 1);
+                filterAuthorList.add(substring);
+            }
         }
 
+        for (int i = 0; i < bookElements.size(); i++) {
+            booksList.add(new Books(TitleList.get(i), filterAuthorList.get(i), priceList.get(i)));
+        }
+
+        String nameOfBook = null;
         for (Books book : booksList) {
-            Assert.assertEquals(book.getTitle(), "Head First Java, 2nd Edition");
+            if (book.getTitle().equals("Head First Java, 2nd Edition")) {
+                nameOfBook = book.getTitle();
+            }
+
+            System.out.println("Book Name:    " + book.getTitle());
+            System.out.println("Book author:  " + book.getAuthor());
+            System.out.println("Book price:   $" + book.getPrice());
+            System.out.println(" ");
 
         }
+        Assert.assertEquals(nameOfBook, "Head First Java, 2nd Edition");
     }
 }
