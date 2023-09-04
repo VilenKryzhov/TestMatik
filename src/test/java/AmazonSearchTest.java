@@ -31,10 +31,6 @@ public class AmazonSearchTest extends BaseTest {
 
         List<String> priceList = amazonBooksPage.getPriceList();
 
-
-        Selenide.sleep(1000);
-
-
         for (int i = 0; i < titleList.size(); i++) {
             booksList.add(new Books(titleList.get(i), filterAuthorList.get(i)
                     , priceList.get(i)));
