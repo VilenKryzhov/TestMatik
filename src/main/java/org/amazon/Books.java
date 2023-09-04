@@ -1,4 +1,4 @@
-package org.base;
+package org.amazon;
 
 import lombok.*;
 
