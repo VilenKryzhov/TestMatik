@@ -1,4 +1,5 @@
-import com.codeborne.selenide.Selenide;
+package amazonTest;
+
 import org.base.AmazonBooksPage;
 import org.base.BaseTest;
 import org.base.Books;

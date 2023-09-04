@@ -93,10 +93,9 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
-<!--                    <suiteXmlFiles>-->
-<!--                        <suiteXmlFile>src/main/resources/testSuitesAPI.xml</suiteXmlFile>-->
-<!--                        <suiteXmlFile>src/main/resources/testSuites.xml</suiteXmlFile>-->
-<!--                    </suiteXmlFiles>-->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/main/resources/testSuites.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
             <plugin>
