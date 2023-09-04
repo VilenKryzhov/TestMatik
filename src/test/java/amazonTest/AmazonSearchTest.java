@@ -1,8 +1,8 @@
 package amazonTest;
 
-import org.base.AmazonBooksPage;
+import org.amazon.AmazonBooksPage;
 import org.base.BaseTest;
-import org.base.Books;
+import org.amazon.Books;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,7 +19,7 @@ public class AmazonSearchTest extends BaseTest {
     public void test() {
         amazonBooksPage.openAmazonHomePage(url);
 
-        amazonBooksPage.clickFilterBtn();
+        amazonBooksPage.clickFilterButtotn();
 
         amazonBooksPage.clickBooksFilter();
 
