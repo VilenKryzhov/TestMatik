@@ -3,7 +3,7 @@
 <suite name="TestSuite">
     <test name="Tests">
         <packages>
-            <package name="amazonTest.*"/>
+            <package name="amazon.*"/>
         </packages>
     </test>
 </suite>

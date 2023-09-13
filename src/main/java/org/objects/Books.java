@@ -1,4 +1,4 @@
-package org.amazon;
+package org.objects;
 
 import lombok.*;
 
