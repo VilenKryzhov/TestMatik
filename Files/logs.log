@@ -1,14 +1,14 @@
-12:40:07.491 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
-12:40:07.507 | INFO | FileHelper:56                            | Creating folder: C:\Users\user\IdeaProjects\TestMatik\build\downloads\1694598007502_2344_1
-12:40:08.496 | INFO | WebDriverManager:966                     | Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
-12:40:08.528 | INFO | WebDriverManager:1021                    | Exporting webdriver.chrome.driver as C:\Users\user\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
-12:40:10.054 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
-12:40:10.054 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
-12:40:10.201 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=114.0.5735.199 Platform=WINDOWS
-12:40:10.202 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
-12:40:10.203 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
-12:40:10.203 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (c0eee76e612c93527d7bb7699505516c)
-12:40:10.207 | INFO | WebDriverThreadLocalContainer:163        | Browser and proxy will stay open due to holdBrowserOpen=true: 1 -> ChromeDriver: chrome on WINDOWS (c0eee76e612c93527d7bb7699505516c), null
-12:40:17.924 | INFO | CloseDriverCommand:24                    | Hold browser and proxy open: 1 -> ChromeDriver: chrome on WINDOWS (c0eee76e612c93527d7bb7699505516c), null
-12:40:17.926 | INFO | CloseDriverCommand:24                    | Hold browser and proxy open: 37 -> ChromeDriver: chrome on WINDOWS (c0eee76e612c93527d7bb7699505516c), null
-12:40:17.927 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\user\IdeaProjects\TestMatik\build\downloads\1694598007502_2344_1
+13:06:09.379 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+13:06:09.428 | INFO | FileHelper:56                            | Creating folder: C:\javaID\javaModule\TestMatik2\build\downloads\1694599569416_1236_1
+13:06:11.492 | INFO | WebDriverManager:966                     | Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+13:06:11.607 | INFO | WebDriverManager:1021                    | Exporting webdriver.chrome.driver as C:\Users\DASHA\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+13:06:16.710 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+13:06:16.711 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+13:06:16.881 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=114.0.5735.199 Platform=WINDOWS
+13:06:16.882 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+13:06:16.882 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+13:06:16.883 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (d749b4daa9d46668e8895fb503893d62)
+13:06:16.891 | INFO | WebDriverThreadLocalContainer:163        | Browser and proxy will stay open due to holdBrowserOpen=true: 1 -> ChromeDriver: chrome on WINDOWS (d749b4daa9d46668e8895fb503893d62), null
+13:06:30.312 | INFO | CloseDriverCommand:24                    | Hold browser and proxy open: 1 -> ChromeDriver: chrome on WINDOWS (d749b4daa9d46668e8895fb503893d62), null
+13:06:30.317 | INFO | CloseDriverCommand:24                    | Hold browser and proxy open: 24 -> ChromeDriver: chrome on WINDOWS (d749b4daa9d46668e8895fb503893d62), null
+13:06:30.319 | INFO | FileHelper:81                            | Deleted empty folder: C:\javaID\javaModule\TestMatik2\build\downloads\1694599569416_1236_1

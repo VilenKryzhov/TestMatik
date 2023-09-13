@@ -32,11 +32,11 @@ public class SearchBook extends BaseTest {
         List<String> authorList = Pages.homePage().getAuthorList();
         List<String> priceList = Pages.homePage().getPriceList();
 
-        Pages.homePage().getFilterAuthorList(authorList, filterAuthorList);
+        Actions.booksActions().getFilterAuthorList(authorList, filterAuthorList);
 
-        Pages.homePage().createBooksList(titleList,filterAuthorList,priceList);
+        Actions.booksActions().createBooksList(titleList,filterAuthorList,priceList);
 
-        String nameOfBook = Pages.homePage().getNameOfBook();
+        String nameOfBook = Actions.booksActions().getNameOfBook();
 
         Assert.assertEquals(nameOfBook, "Head First Java, 2nd Edition");
     }

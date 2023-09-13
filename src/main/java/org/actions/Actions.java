@@ -8,4 +8,11 @@ public class Actions {
         }
         return openPage;
     }
+    private static BooksActions booksActions;
+    public static BooksActions booksActions() {
+        if (booksActions == null) {
+            booksActions = new BooksActions();
+        }
+        return booksActions;
+    }
 }
