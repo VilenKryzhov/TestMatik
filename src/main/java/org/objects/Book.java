@@ -8,10 +8,15 @@ import lombok.*;
 @AllArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class Books {
+
+public class Book {
     String title;
 
-    String author;
+    String Author;
 
     String price;
+
+    public Book() {
+
+    }
 }

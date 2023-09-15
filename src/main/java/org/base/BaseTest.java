@@ -23,7 +23,7 @@ public class BaseTest {
 
     @BeforeMethod(alwaysRun = true, description = "open basic URL")
     public void setUp() {
-        Selenide.open("https://www.amazon.com/ ");
+        Selenide.open("https://www.amazon.com/");
     }
 
 
