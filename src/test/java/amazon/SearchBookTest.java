@@ -32,9 +32,19 @@ public class SearchBookTest extends BaseTest {
 
         Actions.booksActions().navigateBackPage();
 
-        List<Book> booksList = Pages.booksCatalogPage().getBooksList();
+        List<Book> booksList = Pages.booksCatalogPage().getBooks();
+
+
+        for (Book book : booksList) {
+            System.out.println(book.getTitle());
+            System.out.println(book.getAuthor());
+            System.out.println(book.getPrice());
+            System.out.println("_________________");
+
+        }
+
+        System.out.println(expectedBook);
 
         Assert.assertTrue(booksList.contains(expectedBook));
-
     }
 }
